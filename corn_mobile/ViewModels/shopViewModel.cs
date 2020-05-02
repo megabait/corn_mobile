@@ -4,6 +4,8 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using corn_mobile.Views.shop;
+using Rg.Plugins.Popup.Services;
 using Xamarin.Forms;
 
 namespace corn_mobile.ViewModels
@@ -62,6 +64,8 @@ namespace corn_mobile.ViewModels
         {
             get { return _SelectedProduct;  }
             set {
+                //PopupNavigation.PushAsync(new shop_modal());
+                //await PopupNavigation.PushAsync(new  ());
                 _SelectedProduct = value;
                 //тут вызываю обработчик Пикер
                 OnPropertyChanged("SelectedFriend");
