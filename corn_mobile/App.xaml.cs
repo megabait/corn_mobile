@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using corn_mobile.Services;
 using corn_mobile.Views;
+using corn_mobile.Views.shop;
 
 namespace corn_mobile
 {
@@ -14,7 +15,7 @@ namespace corn_mobile
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new MainPage();
+            MainPage = new menu_shop();
         }
 
         protected override void OnStart()
