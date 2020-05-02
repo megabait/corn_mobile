@@ -29,7 +29,7 @@ namespace corn_mobile.Views
             var item = new Item
             {
                 Text = "Item    1s1",
-                Description = "This is an item description."
+                Description = "This is an item description. 123"
             };
 
             viewModel = new ItemDetailViewModel(item);
